@@ -1,1 +1,19 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+html {
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  background-image: url("/images/bg-pattern-top-mobile.svg"), url("/images/bg-pattern-bottom-mobile.svg");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  font-family: "Spartan", sans-serif;
+}
+/*# sourceMappingURL=styles.css.map */
