@@ -1,13 +1,42 @@
 .reviews {
     padding: 5rem 1.5rem;
+    max-width: 29rem;
+
+
+    @media screen and (min-width: $large) {
+        padding: 5rem 3rem;
+        max-width: 70rem;
+    }
+
+    @media screen and (min-width: $xlarge) {
+        padding: unset;
+    }
 }
 
 .reviews__intro {
+    padding-bottom: 3rem;
     text-align: center;
+
+    @media screen and (min-width: $large) {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding-bottom: 4.5rem;
+    }
 }
 
 .reviews__header {
+    margin-bottom: 2.5rem;
 
+    @media screen and (min-width: $large) {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;;
+        max-width: 28rem;
+        text-align: left;
+        margin-bottom: unset;
+    }
 }
 
 .reviews__headline {
@@ -17,10 +46,15 @@
     line-height: 2rem;
     color: $intro-heading;
     letter-spacing: -0.075rem;
+
+    @media screen and (min-width: $large) {
+        padding-bottom: 0.5rem;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
 }
 
 .reviews__tagline {
-    padding-bottom: 2.5rem;
     font-size: 0.9375rem;
     font-weight: $medium;
     line-height: 1.75rem;
@@ -29,7 +63,18 @@
 }
 
 .reviews__ratings {
-    margin-bottom: 3rem;
+
+    @media screen and (min-width: $large) {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 1rem 0 1rem 1rem;
+    }
+
+    @media screen and (min-width: $xlarge) {
+        align-items: center;
+    }
 }
 
 .reviews__ratings__item {
@@ -40,6 +85,24 @@
     &:not(:last-of-type) {
         margin-bottom: 1rem;
     }
+
+    @media screen and (min-width: $large) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 27.75rem;
+        padding: 1.25rem;
+    }
+
+    @media screen and (min-width: $xlarge) {
+        &:first-of-type {
+            align-self: flex-start;
+        }
+
+        &:last-of-type {
+            align-self: flex-end;
+        }
+    }
 }
 
 .reviews__ratings__stars {
@@ -47,6 +110,11 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+
+    @media screen and (min-width: $large) {
+        margin-bottom: 0;
+        margin-right: 2rem;
+    }
 }
 
 .reviews__ratings__stars__icon {
@@ -59,10 +127,18 @@
     font-weight: $bold;
     line-height: 0.9375rem;
     color: $rating-font;
+
+    @media screen and (min-width: $large) {
+        line-height: 1rem;
+    }
 }
 
 .reviews__container {
-
+    @media screen and (min-width: $large) {
+        display: flex;
+        align-items: center;
+        min-height: 20rem;
+    }
 }
 
 .reviews__item {
@@ -72,6 +148,24 @@
 
     &:not(:last-of-type) {
         margin-bottom: 1rem;
+
+        @media screen and (min-width: $large) {
+            margin-bottom: unset;
+            margin-right: 1.75rem;
+        }
+    }
+
+    @media screen and (min-width: $large) {
+        min-height: 240px;
+        padding: 2.5rem 2rem 2.5rem;
+
+        &:first-of-type {
+            align-self: flex-start;
+        }
+
+        &:last-of-type {
+            align-self: flex-end;
+        }
     }
 }
 
@@ -106,8 +200,9 @@
 }
 
 .reviews__text {
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     font-weight: $medium;
     line-height: 1.375rem;
     color: $card-text;
+    letter-spacing: -0.23px;
 }
