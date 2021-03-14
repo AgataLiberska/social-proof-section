@@ -1,13 +1,29 @@
 .reviews {
     padding: 5rem 1.5rem;
+    max-width: 70rem;
+
+    @media screen and (min-width: $xlarge) {
+        padding: 5rem 3rem;
+    }
 }
 
 .reviews__intro {
     text-align: center;
+
+    @media screen and (min-width: $xlarge) {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
 }
 
 .reviews__header {
 
+    @media screen and (min-width: $xlarge) {
+        flex-basis: 50%;
+        max-width: 28rem;
+        text-align: left;
+    }
 }
 
 .reviews__headline {
@@ -17,6 +33,12 @@
     line-height: 2rem;
     color: $intro-heading;
     letter-spacing: -0.075rem;
+
+    @media screen and (min-width: $xlarge) {
+        padding-bottom: 0.5rem;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
 }
 
 .reviews__tagline {
@@ -30,6 +52,14 @@
 
 .reviews__ratings {
     margin-bottom: 3rem;
+
+    @media screen and (min-width: $xlarge) {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0 1rem 1rem;
+    }
 }
 
 .reviews__ratings__item {
@@ -40,6 +70,22 @@
     &:not(:last-of-type) {
         margin-bottom: 1rem;
     }
+
+    @media screen and (min-width: $xlarge) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 27.75rem;
+        padding: 1.25rem;
+
+        &:first-of-type {
+            align-self: flex-start;
+        }
+
+        &:last-of-type {
+            align-self: flex-end;
+        }
+    }
 }
 
 .reviews__ratings__stars {
@@ -47,6 +93,11 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+
+    @media screen and (min-width: $xlarge) {
+        margin-bottom: 0;
+        margin-right: 2rem;
+    }
 }
 
 .reviews__ratings__stars__icon {
@@ -59,10 +110,16 @@
     font-weight: $bold;
     line-height: 0.9375rem;
     color: $rating-font;
+
+    @media screen and (min-width: $xlarge) {
+        line-height: 1rem;
+    }
 }
 
 .reviews__container {
-
+    @media screen and (min-width: $xlarge) {
+        display: flex;
+    }
 }
 
 .reviews__item {
