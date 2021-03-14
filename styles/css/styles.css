@@ -28,7 +28,7 @@ body {
   font-family: "Spartan", sans-serif;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   body {
     background-image: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-bottom-desktop.svg");
   }
@@ -36,7 +36,14 @@ body {
 
 .reviews {
   padding: 5rem 1.5rem;
-  max-width: 70rem;
+  max-width: 29rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .reviews {
+    padding: 5rem 3rem;
+    max-width: 70rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -50,7 +57,7 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .reviews__intro {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -68,10 +75,20 @@ body {
   margin-bottom: 2.5rem;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .reviews__header {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     max-width: 28rem;
     text-align: left;
     margin-bottom: unset;
@@ -87,7 +104,7 @@ body {
   letter-spacing: -0.075rem;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .reviews__headline {
     padding-bottom: 0.5rem;
     font-size: 3rem;
@@ -103,7 +120,7 @@ body {
   letter-spacing: -0.5px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .reviews__ratings {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -114,10 +131,18 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 1rem 0 1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews__ratings {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 1rem 0 1rem 1rem;
   }
 }
 
@@ -131,7 +156,7 @@ body {
   margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .reviews__ratings__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -145,6 +170,9 @@ body {
     width: 27.75rem;
     padding: 1.25rem;
   }
+}
+
+@media screen and (min-width: 1440px) {
   .reviews__ratings__item:first-of-type {
     -ms-flex-item-align: start;
         align-self: flex-start;
@@ -168,7 +196,7 @@ body {
   margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .reviews__ratings__stars {
     margin-bottom: 0;
     margin-right: 2rem;
@@ -187,13 +215,13 @@ body {
   color: #502050;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .reviews__ratings__text {
     line-height: 1rem;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .reviews__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -201,7 +229,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    min-height: 300px;
+    min-height: 20rem;
   }
 }
 
@@ -215,14 +243,14 @@ body {
   margin-bottom: 1rem;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .reviews__item:not(:last-of-type) {
     margin-bottom: unset;
     margin-right: 1.75rem;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .reviews__item {
     min-height: 240px;
     padding: 2.5rem 2rem 2.5rem;
