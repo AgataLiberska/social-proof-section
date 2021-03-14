@@ -3,26 +3,30 @@
     max-width: 70rem;
 
     @media screen and (min-width: $xlarge) {
-        padding: 5rem 3rem;
+        padding: unset;
     }
 }
 
 .reviews__intro {
+    padding-bottom: 3rem;
     text-align: center;
 
     @media screen and (min-width: $xlarge) {
         display: flex;
         justify-content: space-between;
         align-content: center;
+        padding-bottom: 4.5rem;
     }
 }
 
 .reviews__header {
+    margin-bottom: 2.5rem;
 
     @media screen and (min-width: $xlarge) {
         flex-basis: 50%;
         max-width: 28rem;
         text-align: left;
+        margin-bottom: unset;
     }
 }
 
@@ -42,7 +46,6 @@
 }
 
 .reviews__tagline {
-    padding-bottom: 2.5rem;
     font-size: 0.9375rem;
     font-weight: $medium;
     line-height: 1.75rem;
@@ -51,7 +54,6 @@
 }
 
 .reviews__ratings {
-    margin-bottom: 3rem;
 
     @media screen and (min-width: $xlarge) {
         flex-basis: 50%;
@@ -119,6 +121,8 @@
 .reviews__container {
     @media screen and (min-width: $xlarge) {
         display: flex;
+        align-items: center;
+        min-height: 300px;
     }
 }
 
@@ -129,6 +133,24 @@
 
     &:not(:last-of-type) {
         margin-bottom: 1rem;
+
+        @media screen and (min-width: $xlarge) {
+            margin-bottom: unset;
+            margin-right: 1.75rem;
+        }
+    }
+
+    @media screen and (min-width: $xlarge) {
+        min-height: 240px;
+        padding: 2.5rem 2rem 2.5rem;
+
+        &:first-of-type {
+            align-self: flex-start;
+        }
+
+        &:last-of-type {
+            align-self: flex-end;
+        }
     }
 }
 
@@ -163,8 +185,9 @@
 }
 
 .reviews__text {
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     font-weight: $medium;
     line-height: 1.375rem;
     color: $card-text;
+    letter-spacing: -0.23px;
 }

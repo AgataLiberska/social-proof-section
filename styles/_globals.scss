@@ -24,7 +24,7 @@ body {
     background-repeat: no-repeat;
     font-family: $font;
 
-    @media screen and (min-width: $large) {
+    @media screen and (min-width: $xlarge) {
         background-image:
             url('/images/bg-pattern-top-desktop.svg'),
             url('/images/bg-pattern-bottom-desktop.svg');
