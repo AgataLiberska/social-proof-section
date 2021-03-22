@@ -23,10 +23,15 @@ body {
         bottom right;
     background-repeat: no-repeat;
     font-family: $font;
+    //overflow-x: hidden;
 
     @media screen and (min-width: $large) {
         background-image:
             url('/images/bg-pattern-top-desktop.svg'),
             url('/images/bg-pattern-bottom-desktop.svg');
     }
+}
+
+main {
+    //overflow-x: hidden;
 }
