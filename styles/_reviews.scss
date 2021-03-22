@@ -1,7 +1,7 @@
 .reviews {
     padding: 5rem 1.5rem;
     max-width: 29rem;
-
+    overflow-x: hidden;
 
     @media screen and (min-width: $large) {
         padding: 5rem 3rem;
