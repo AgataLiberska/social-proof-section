@@ -34,6 +34,10 @@ body {
   }
 }
 
+main {
+  overflow-x: hidden;
+}
+
 .reviews {
   padding: 5rem 1.5rem;
   max-width: 29rem;
